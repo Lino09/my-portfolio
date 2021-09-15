@@ -1,0 +1,16 @@
+#header{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  align-items: center;
+}
+
+.icon-md{
+  width: 20px;
+}
+
+#welcome{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
