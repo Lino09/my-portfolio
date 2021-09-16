@@ -29,6 +29,25 @@ html {
   margin: 20px auto;
 }
 
+.card a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #36b37f;
+  border-radius: 5px;
+  padding: 12px;
+  margin: 20px auto;
+}
+
+.card a:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.card a:active {
+  background-color: #008552;
+}
+
 .about-me-first a:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
@@ -85,7 +104,15 @@ h1 {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(4, auto);
-  column-gap: 8px; 
+  column-gap: 8px;
+}
+
+.second-card ul {
+  padding: 0 8px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  column-gap: 8px;
 }
 
 #logo-cloud ul {
@@ -176,25 +203,6 @@ h2 {
   font-size: 12px;
 }
 
-.card a {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 600;
-  background-color: #36b37f;
-  border-radius: 5px;
-  padding: 12px;
-  margin: 20px auto;
-}
-
-.card a:hover {
-  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
-}
-
-.card a:active {
-  background-color: #008552;
-}
-
 /* ABOUT ME SECTION */
 #about-me {
   margin-top: 100px;
@@ -225,7 +233,7 @@ h2 {
 #bottom-left-img {
   position: absolute;
   left: -30px;
-  bottom: 30px
+  bottom: 30px;
 }
 
 .about-me-second {
@@ -254,20 +262,12 @@ h2 {
   border-radius: 999px;
   width: 100px;
   height: 100px;
-  box-shadow: 0px 16px 24px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
   margin-bottom: 56px;
 }
 
 .second-card h3 {
   font-size: 32px;
-}
-
-.second-card ul {
-  padding: 0 8px;
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  column-gap: 8px;
 }
 
 .second-card ul li {
