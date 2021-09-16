@@ -41,7 +41,7 @@ html {
   height: 100%;
 }
 
-.landing div {
+.landiv {
   padding-top: 54px;
 }
 
@@ -62,6 +62,7 @@ h1 {
 }
 
 #logo-cloud ul {
+  padding: 0;
   list-style: none;
   margin: 0 auto;
   margin-top: 58px;
@@ -79,6 +80,7 @@ h1 {
 }
 
 .scroll-down button {
+  margin-top: 24px;
   border: 2px solid dimgray;
   padding: 15px;
   border-radius: 999px;
@@ -86,4 +88,84 @@ h1 {
 
 .scroll-down button:hover {
   background-color: lightgray;
+}
+
+/* MY WORK SECTION */
+#my-work {
+  width: 100%;
+  margin-top: 56px;
+}
+
+.section{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  row-gap: 16px;
+}
+
+.first {
+  grid-template-rows: 1fr 1fr;
+}
+
+.second {
+  margin-top: 58px;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+  margin: 0
+}
+
+.card {
+  padding: 0 0;
+  border: 2px solid lightgray;
+  width: 90%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  border-radius: 15px;
+  max-width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 12px 12px;
+  text-align: center;
+  
+
+}
+
+.card ul {
+  padding: 0 8px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  column-gap: 8px; 
+}
+
+.card ul li {
+  padding: 8px 12px;
+  background-color: #ebf0ee;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.card a {
+color: white;
+text-decoration: none;
+font-size: 20px;
+font-weight: 600;
+background-color: #36b37f;
+border-radius: 5px;
+padding: 12px;
+margin: 20px auto;
 }
