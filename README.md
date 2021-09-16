@@ -14,13 +14,14 @@
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+Coming Soon!
 
 
 ## Getting Started
 
 
-N/A
+- Clone the repo
+- Run thye project in a live server or simply open the index.html file with your favorite internet browser 
 
 
 
