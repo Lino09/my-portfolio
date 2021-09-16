@@ -18,6 +18,44 @@ html {
   align-items: center;
 }
 
+.about-me-first a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #36b37f;
+  border-radius: 5px;
+  padding: 12px;
+  margin: 20px auto;
+}
+
+.card a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #36b37f;
+  border-radius: 5px;
+  padding: 12px;
+  margin: 20px auto;
+}
+
+.card a:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.card a:active {
+  background-color: #008552;
+}
+
+.about-me-first a:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.about-me-first a:active {
+  background-color: #008552;
+}
+
 #header a {
   text-decoration: none;
   color: black;
@@ -41,7 +79,7 @@ html {
   height: 100%;
 }
 
-.landing div {
+.landiv {
   padding-top: 54px;
 }
 
@@ -61,7 +99,28 @@ h1 {
   text-align: center;
 }
 
+.card ul {
+  padding: 0 4px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  column-gap: 6px;
+  justify-items: center;
+  align-items: center;
+}
+
+.second-card ul {
+  padding: 0 8px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  column-gap: 8px;
+  row-gap: 8px;
+}
+
 #logo-cloud ul {
+  padding: 0;
   list-style: none;
   margin: 0 auto;
   margin-top: 58px;
@@ -79,6 +138,7 @@ h1 {
 }
 
 .scroll-down button {
+  margin-top: 24px;
   border: 2px solid dimgray;
   padding: 15px;
   border-radius: 999px;
@@ -86,4 +146,142 @@ h1 {
 
 .scroll-down button:hover {
   background-color: lightgray;
+}
+
+/* MY WORK SECTION */
+#my-work {
+  width: 100%;
+  margin-top: 56px;
+}
+
+.section {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  row-gap: 16px;
+}
+
+.first {
+  grid-template-rows: 1fr 1fr;
+}
+
+.second {
+  margin-top: 58px;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+}
+
+.card {
+  padding: 0 0;
+  border: 2px solid lightgray;
+  width: 90%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  border-radius: 15px;
+  max-width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 12px 12px;
+  text-align: center;
+}
+
+.card ul li {
+  padding: 8px 12px;
+  background-color: #ebf0ee;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* ABOUT ME SECTION */
+#about-me {
+  margin-top: 100px;
+}
+
+.about-me-first {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 56px;
+  align-items: center;
+}
+
+.about-me-first p {
+  font-size: 20px;
+  text-align: center;
+  line-height: 32px;
+}
+
+#top-right-img {
+  position: absolute;
+  right: 0;
+  right: -30px;
+  top: -30px;
+}
+
+#bottom-left-img {
+  position: absolute;
+  left: -30px;
+  bottom: 30px;
+}
+
+.about-me-second {
+  padding: 0;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  margin-top: 56px;
+  row-gap: 32px;
+}
+
+.second-card {
+  padding: 56px 0;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  border: 2px solid lightgray;
+  background-color: #ebf0ee;
+  border-radius: 15px;
+  align-items: center;
+}
+
+.second-card div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 999px;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
+  margin-bottom: 56px;
+}
+
+.second-card h3 {
+  font-size: 32px;
+}
+
+.second-card ul li {
+  padding: 8px 12px;
+  background-color: #fff;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #36b37e;
 }
