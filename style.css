@@ -18,6 +18,25 @@ html {
   align-items: center;
 }
 
+.about-me-first a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #36b37f;
+  border-radius: 5px;
+  padding: 12px;
+  margin: 20px auto;
+}
+
+.about-me-first a:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.about-me-first a:active {
+  background-color: #008552;
+}
+
 #header a {
   text-decoration: none;
   color: black;
@@ -59,6 +78,14 @@ h1 {
   margin-top: 58px;
   font-size: 20px;
   text-align: center;
+}
+
+.card ul {
+  padding: 0 8px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  column-gap: 8px; 
 }
 
 #logo-cloud ul {
@@ -115,7 +142,7 @@ h1 {
 h2 {
   font-size: 40px;
   text-align: center;
-  margin: 0
+  margin: 0;
 }
 
 .card {
@@ -139,16 +166,6 @@ h2 {
   font-weight: 600;
   margin: 12px 12px;
   text-align: center;
-  
-
-}
-
-.card ul {
-  padding: 0 8px;
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  column-gap: 8px; 
 }
 
 .card ul li {
@@ -171,7 +188,7 @@ h2 {
 }
 
 .card a:hover {
-  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .card a:active {
@@ -196,25 +213,6 @@ h2 {
   font-size: 20px;
   text-align: center;
   line-height: 32px;
-}
-
-.about-me-first a {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 500;
-  background-color: #36b37f;
-  border-radius: 5px;
-  padding: 12px;
-  margin: 20px auto;
-}
-
-.about-me-first a:hover {
-  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
-}
-
-.about-me-first a:active {
-  background-color: #008552;
 }
 
 #top-right-img {
@@ -269,7 +267,7 @@ h2 {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(4, auto);
-  column-gap: 8px; 
+  column-gap: 8px;
 }
 
 .second-card ul li {
