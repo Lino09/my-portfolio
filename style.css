@@ -1,9 +1,10 @@
 /* GENERAL */
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+
 button {
   border: none;
   background-color: transparent;
@@ -104,6 +105,13 @@ h1 {
   margin-top: 58px;
   font-size: 20px;
   text-align: center;
+}
+
+form ul {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  /* background-color: #36b37e; */
 }
 
 .card ul {
@@ -294,44 +302,36 @@ h2 {
 
 /* ====== Contact form section ===================== */
 
-.form-section{
+.form-section {
   background-image: url("./assets/png/form-img.png");
   background-repeat: no-repeat;
   background-position: right 0 bottom 60px;
 }
 
-.invisible{
+.invisible {
   visibility: hidden;
   height: 0;
   width: 0;
   position: absolute;
 }
 
-form ul{
-  display: flex;
-  list-style-type: none;
-  flex-direction: column;
-  /* background-color: #36b37e; */
-}
-
-form input, textarea{
-  border: 1px solid #D0D9D4;
+form input, textarea {
+  border: 1px solid #d0d9d4;
   width: 100%;
   padding: 15px;
   margin-top: 10px;
-  color: #6B778C;
+  color: #6b778c;
   font-size: 16px;
   border-radius: 5px;
   font-family: 'Inter', sans-serif;
 }
 
-textarea{
+textarea {
   margin-bottom: 20px;
 }
 
-#form-btn{
+#form-btn {
   display: block;
-  margin: 0 auto;
   border: none;
   color: white;
   font-size: 20px;
@@ -342,10 +342,10 @@ textarea{
   margin: 20px auto;
 }
 
-#email-id{
+#email-id {
   text-decoration: none;
   font-size: 20px;
-  color: #42526E;
+  color: #42526e;
   display: block;
   margin: 20px auto;
   text-align: center;
