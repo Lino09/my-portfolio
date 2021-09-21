@@ -314,7 +314,17 @@ h2 {
   position: absolute;
 }
 
-form input, 
+form input {
+  border: 1px solid #d0d9d4;
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  color: #6b778c;
+  font-size: 16px;
+  border-radius: 5px;
+  font-family: 'Inter', sans-serif;
+}
+
 textarea {
   border: 1px solid #d0d9d4;
   width: 100%;
