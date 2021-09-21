@@ -6,13 +6,7 @@
 }
 button {
   border: none;
-  color: white;
-  font-size: 20px;
-  font-weight: 500;
-  background-color: #36b37f;
-  border-radius: 5px;
-  padding: 12px;
-  margin: 20px auto;
+  background-color: transparent;
 }
 
 /* HEADER */
@@ -243,8 +237,7 @@ h2 {
 
 #top-right-img {
   position: absolute;
-  right: 0;
-  right: -30px;
+  right: -20px;
   top: -30px;
 }
 
@@ -298,12 +291,13 @@ h2 {
   text-align: center;
   color: #36b37e;
 }
+
 /* ====== Contact form section ===================== */
 
 .form-section{
   background-image: url("./assets/png/form-img.png");
   background-repeat: no-repeat;
-  background-position: right 0px bottom 60px;
+  background-position: right 0 bottom 60px;
 }
 
 .invisible{
@@ -319,6 +313,7 @@ form ul{
   flex-direction: column;
   /* background-color: #36b37e; */
 }
+
 form input, textarea{
   border: 1px solid #D0D9D4;
   width: 100%;
@@ -337,20 +332,21 @@ textarea{
 #form-btn{
   display: block;
   margin: 0 auto;
-}
-
-.footer-icons ul{
-padding-bottom: 15px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #36b37f;
+  border-radius: 5px;
+  padding: 12px;
+  margin: 20px auto;
 }
 
 #email-id{
   text-decoration: none;
   font-size: 20px;
-  margin-bottom: 10px;
-  padding-bottom: 20px;
   color: #42526E;
   display: block;
-  margin: 0 auto;
+  margin: 20px auto;
   text-align: center;
-
 }
