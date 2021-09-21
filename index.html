@@ -182,21 +182,21 @@
             </ul>
         </section>
 
-        <section>
+        <section class="form-section">
             <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
 
             <form action="https://formspree.io/f/mzbyokjj"
             method="POST">
                 <ul>
-                    <li><label class="invisible" for="name">Name<input placeholder="Full name" id="name" type="text" name="Full_name"></li>
+                    <li><input placeholder="Full name" id="name" type="text" maxlength="30" required name="Full_name"></li>
 
-                    <li><label class="invisible" for="email">Email</label><input placeholder="Email address" id="email" type="email" name="Email"></li>
+                    <li><label class="invisible" for="email">Email</label><input placeholder="Email address" id="email" required type="email" name="Email"></li>
 
-                    <li><label class="invisible" for="message"></label>Message<textarea name="Message" id="message" maxlength="500" rows="5">Enter text here</textarea></li>
+                    <li><label class="invisible" for="message">Message</label><textarea name="Message" id="message" maxlength="500" required rows="5">Enter text here</textarea></li>
                 </ul>
-                <button type="submit"> Get in touch</button>
+                <button type="submit" id="form-btn"> Get in touch</button>
             </form>
-            <div class="logo-cloud">
+            <div class="logo-cloud footer-icons">
                 <ul>
                     <li>
                         <a href="#"><img src="./assets/svg/twitter.svg" alt="twitter"></a>
@@ -215,7 +215,7 @@
                     </li>
                 </ul>
             </div>
-            <a href="mailto:aherrera@wootbit.io">aherrera@wootbit.io</a>
+            <a href="mailto:aherrera@wootbit.io" id="email-id">aherrera@wootbit.io</a>
         </section>
 
 

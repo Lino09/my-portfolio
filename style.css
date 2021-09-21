@@ -1,5 +1,9 @@
 /* GENERAL */
-
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 button {
   border: none;
   color: white;
@@ -290,4 +294,58 @@ h2 {
   font-size: 16px;
   text-align: center;
   color: #36b37e;
+}
+/* ====== Contact form section ===================== */
+
+.form-section{
+  background-image: url("./assets/png/form-img.png");
+  background-repeat: no-repeat;
+  background-position: right 5px bottom 60px;
+}
+
+.invisible{
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  position: absolute;
+}
+
+form ul{
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  /* background-color: #36b37e; */
+}
+form input, textarea{
+  border: 1px solid #D0D9D4;
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  color: #6B778C;
+  font-size: 16px;
+  border-radius: 5px;
+  font-family: 'Inter', sans-serif;
+}
+
+textarea{
+  margin-bottom: 20px;
+}
+
+#form-btn{
+  display: block;
+  margin: 0 auto;
+}
+.footer-icons ul{
+padding-bottom: 15px;
+}
+#email-id{
+  text-decoration: none;
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  color: #42526E;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+
 }
