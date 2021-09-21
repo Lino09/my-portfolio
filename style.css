@@ -111,7 +111,6 @@ form ul {
   display: flex;
   list-style-type: none;
   flex-direction: column;
-  /* background-color: #36b37e; */
 }
 
 .card ul {
@@ -315,7 +314,8 @@ h2 {
   position: absolute;
 }
 
-form input, textarea {
+form input, 
+textarea {
   border: 1px solid #d0d9d4;
   width: 100%;
   padding: 15px;
