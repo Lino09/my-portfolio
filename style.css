@@ -1,8 +1,14 @@
 /* GENERAL */
 
 button {
-  background-color: transparent;
   border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #36b37f;
+  border-radius: 5px;
+  padding: 12px;
+  margin: 20px auto;
 }
 
 /* HEADER */
@@ -119,7 +125,7 @@ h1 {
   row-gap: 8px;
 }
 
-#logo-cloud ul {
+.logo-cloud ul {
   padding: 0;
   list-style: none;
   margin: 0 auto;
