@@ -44,6 +44,8 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse
+- Michael Oladele
+- Jim Ntare
 
 ## 📝 License
 

@@ -1,8 +1,13 @@
 /* GENERAL */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
 button {
-  background-color: transparent;
   border: none;
+  background-color: transparent;
 }
 
 /* HEADER */
@@ -73,10 +78,13 @@ html {
 /* HEADLINE SECTION */
 
 .landing {
-  padding: 0 24px;
   background-image: url(./assets/png/header-illsutration-mobile.svg);
   background-repeat: no-repeat;
   height: 100%;
+}
+
+section {
+  padding: 0 24px;
 }
 
 .landiv {
@@ -99,6 +107,12 @@ h1 {
   text-align: center;
 }
 
+form ul {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+}
+
 .card ul {
   padding: 0 4px;
   list-style: none;
@@ -119,7 +133,7 @@ h1 {
   row-gap: 8px;
 }
 
-#logo-cloud ul {
+.logo-cloud ul {
   padding: 0;
   list-style: none;
   margin: 0 auto;
@@ -230,8 +244,7 @@ h2 {
 
 #top-right-img {
   position: absolute;
-  right: 0;
-  right: -30px;
+  right: -20px;
   top: -30px;
 }
 
@@ -273,7 +286,9 @@ h2 {
 }
 
 .second-card h3 {
-  font-size: 32px;
+  font-size: 24px;
+  margin: 24px 0;
+  color: #344563;
 }
 
 .second-card ul li {
@@ -284,4 +299,71 @@ h2 {
   font-size: 16px;
   text-align: center;
   color: #36b37e;
+}
+
+/* ====== Contact form section ===================== */
+
+.form-section {
+  background-image: url("./assets/png/form-img.png");
+  background-repeat: no-repeat;
+  background-position: right 0 bottom 60px;
+}
+
+.invisible {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  position: absolute;
+}
+
+form input {
+  border: 1px solid #d0d9d4;
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  color: #6b778c;
+  font-size: 16px;
+  border-radius: 5px;
+  font-family: 'Inter', sans-serif;
+}
+
+textarea {
+  border: 1px solid #d0d9d4;
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  color: #6b778c;
+  font-size: 16px;
+  border-radius: 5px;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 20px;
+}
+
+#form-btn {
+  display: block;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #36b37f;
+  border-radius: 5px;
+  padding: 12px;
+  margin: 20px auto;
+}
+
+#email-id {
+  text-decoration: none;
+  font-size: 20px;
+  color: #42526e;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+
+#form-start {
+  font-size: 40px;
+  line-height: 52px;
+  margin: 24px 0;
+  font-weight: 700;
+  color: #172b4d;
 }
