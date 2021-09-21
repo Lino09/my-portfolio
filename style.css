@@ -286,7 +286,9 @@ h2 {
 }
 
 .second-card h3 {
-  font-size: 32px;
+  font-size: 24px;
+  margin: 24px 0;
+  color: #344563;
 }
 
 .second-card ul li {
@@ -356,4 +358,12 @@ textarea {
   display: block;
   margin: 20px auto;
   text-align: center;
+}
+
+#form-start {
+  font-size: 40px;
+  line-height: 52px;
+  margin: 24px 0;
+  font-weight: 700;
+  color: #172b4d;
 }
