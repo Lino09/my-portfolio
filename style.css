@@ -39,6 +39,7 @@ ul {
   border-radius: 5px;
   padding: 12px;
   margin: 20px auto;
+  transition: all 3s ease 0s;
 }
 
 .scroll-down a {
@@ -59,10 +60,14 @@ ul {
   border-radius: 5px;
   padding: 12px;
   margin: 20px auto;
+  transition: all 2s ease-out 0s;
 }
 
 .card a:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  background-color: white;
+  color: #36b37f;
+  border: solid 1px #36b37f;
 }
 
 .card a:active {
@@ -71,6 +76,9 @@ ul {
 
 .about-me-first a:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  background-color: white;
+  color: #36b37f;
+  border: solid 10px #36b37f;
 }
 
 .about-me-first a:active {
