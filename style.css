@@ -377,7 +377,7 @@ textarea {
   display: none;
 }
 
-@media only screen and (min-device-width: 480px) {
+@media only screen and (min-device-width: 780px) {
   #landing {
     padding: 200px 0;
     background-image: url(./assets/png/Header-llustration-desktop.png);
@@ -426,9 +426,6 @@ textarea {
     font-size: 15px;
     letter-spacing: 1px;
   }
-}
-
-@media only screen and (min-device-width: 768px) {
   .second {
     grid-template: "a b"1fr "a b"1fr "a b"1fr;
   }
@@ -491,7 +488,11 @@ textarea {
     margin: 0;
     margin-bottom: 12px;
   }
+  .card img {
+    height: 220px;
+  }
 }
+
 
 @media only screen and (min-device-width: 1024px) {
   .logo-cloud {
@@ -500,9 +501,5 @@ textarea {
 
   .second {
     grid-template: "a b c"1fr "a b c"1fr;
-  }
-
-  .card img {
-    height: 220px;
   }
 }
