@@ -11,9 +11,14 @@
 
 <body>
     <header id="header">
-        <a href="/" id="welcome">Welcome</a>
+        <a href="/" id="welcome" class="only-mobile">Welcome</a>
         <nav>
-            <button>
+            <ul class="only-desktop desktop-menu">
+                <li><a href="#landing">Portfolio</a></li>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#form-start">Contact</a></li>
+            </ul>
+            <button class="only-mobile">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon-md" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -21,38 +26,43 @@
             </button>
         </nav>
     </header>
-    <main class="landing">
-        <div class="landiv">
-            <h1>Hey there. I'm Abel<br><span class="greeny">I'm a software developer</span></h1>
-            <p id="main-support-text"> I can help you build a product , feature or website Look through some of my work
-                and experience! If you like what you see and have a project you need coded,
-                don’t hestiate to contact me.</p>
-        </div>
-        <div class="logo-cloud">
-            <ul>
-                <li>
-                    <a href="#"><img src="./assets/svg/twitter.svg" alt="twitter"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="./assets/svg/Linkedin-icon.svg" alt="LinkedIn"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="./assets/svg/medium.svg" alt="Medium"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="./assets/svg/github.svg" alt="Github"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="./assets/svg/angellist.svg" alt="Angellist"></a>
-                </li>
-            </ul>
-        </div>
-        <div class="scroll-down">
-            <button><img src="./assets/png/arrowtip.png" alt=""> </button>
-        </div>
+    <main >
+        <section id="landing">
 
-        <section id="my-work">
-            <div class="first section">
+            <div class="landiv">
+                <h1>Hey there. I'm Abel<br><span class="greeny">I'm a software developer</span></h1>
+                <p id="main-support-text"> I can help you build a product , feature or website Look through some of my work
+                    and experience! If you like what you see and have a project you need coded,
+                    don’t hestiate to contact me.</p>
+                </div>
+                <div class="logo-cloud">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="./assets/svg/twitter.svg" alt="twitter"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./assets/svg/Linkedin-icon.svg" alt="LinkedIn"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./assets/svg/medium.svg" alt="Medium"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./assets/svg/github.svg" alt="Github"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./assets/svg/angellist.svg" alt="Angellist"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="scroll-down">
+                    <a href="#my-work">
+                        <img src="./assets/png/arrowtip.png" alt=""> 
+                    </a>
+                </div>
+            </section>
+                
+                <section id="my-work">
+                    <div class="first section">
                 <h2>My Recent Works</h2>
                 <img src="./assets/png/separator.png" alt="separator">
             </div>
@@ -183,20 +193,22 @@
         </section>
 
         <section class="form-section">
-            <h2 id="form-start">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-
-            <form action="https://formspree.io/f/mzbyokjj"
-            method="POST">
+            <div id="form-and-title">
+                <h2 id="form-start">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+                
+                <form action="https://formspree.io/f/mzbyokjj"
+                method="POST">
                 <ul>
                     <li><input placeholder="Full name" id="name" type="text" maxlength="30" required name="Full_name"></li>
-
+                    
                     <li><label class="invisible" for="email">Email</label><input placeholder="Email address" id="email" required type="email" name="Email"></li>
-
+                    
                     <li><label class="invisible" for="message">Message</label><textarea placeholder="Enter text here" name="Message" id="message" maxlength="500" required rows="5"></textarea></li>
                 </ul>
                 <button type="submit" id="form-btn"> Get in touch</button>
             </form>
-            <div class="logo-cloud footer-icons">
+        </div>
+            <div class="logo-cloud" id="footer-icons">
                 <ul>
                     <li>
                         <a href="#"><img src="./assets/svg/twitter.svg" alt="twitter"></a>
@@ -217,8 +229,8 @@
             </div>
             <a href="mailto:aherrera@wootbit.io" id="email-id">aherrera@wootbit.io</a>
         </section>
-
-
+        
+        
     </main>
 </body>
 
