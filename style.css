@@ -377,7 +377,7 @@ textarea {
   display: none;
 }
 
-@media only screen and (min-device-width: 780px) {
+@media only screen and (min-device-width: 992px) {
   #landing {
     padding: 200px 0;
     background-image: url(./assets/png/Header-llustration-desktop.png);
@@ -426,6 +426,7 @@ textarea {
     font-size: 15px;
     letter-spacing: 1px;
   }
+
   .second {
     grid-template: "a b"1fr "a b"1fr "a b"1fr;
   }
@@ -443,6 +444,7 @@ textarea {
 
   .card h3 {
     margin: 54px auto;
+    height: 48px;
   }
 
   html {
@@ -488,11 +490,11 @@ textarea {
     margin: 0;
     margin-bottom: 12px;
   }
+
   .card img {
     height: 220px;
   }
 }
-
 
 @media only screen and (min-device-width: 1024px) {
   .logo-cloud {
