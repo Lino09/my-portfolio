@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-Coming Soon!
+[Click Here](https://lino09.github.io/my-portfolio/)
 
 
 ## Getting Started
