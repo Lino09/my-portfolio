@@ -140,9 +140,9 @@ form ul {
 
 .card ul {
   padding: 0 4px;
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  column-gap: 6px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
   justify-items: center;
   align-items: center;
 }
