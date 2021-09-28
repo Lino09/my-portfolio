@@ -46,6 +46,7 @@ Give a ⭐️ if you like this project!
 - Microverse
 - Michael Oladele
 - Jim Ntare
+- Piero Lescano
 
 ## 📝 License
 
