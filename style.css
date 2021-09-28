@@ -201,6 +201,21 @@ h2 {
   margin: 0;
 }
 
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-0.5deg);
+  }
+  75% {
+    transform: rotate(0.5deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
 .card {
   padding: 0 0;
   border: 2px solid lightgray;
@@ -209,6 +224,13 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.card:hover {
+  animation-duration: 2s;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .card img {
