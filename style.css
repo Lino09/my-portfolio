@@ -30,6 +30,16 @@ ul {
   align-items: center;
 }
 
+.menu-mobile ul li a {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  text-decoration: none;
+  color: #3a4a42;
+  padding: 10px 10px;
+}
+
 .about-me-first a {
   color: white;
   text-decoration: none;
@@ -427,16 +437,6 @@ textarea {
   right: 38px;
 }
 
-.menu-mobile ul li a {
-  font-family: 'Inter', sans-serif;
-  font-size: 32px;
-  font-weight: 600;
-  line-height: 44px;
-  text-decoration: none;
-  color: #3A4A42;
-  padding: 10px 10px;
-}
-
 .menu-mobile ul li {
   margin: 20px 0;
 }
@@ -454,6 +454,7 @@ textarea {
     background-position: center top -50px;
     z-index: 0;
   }
+
   .menu-mobile {
     display: none;
   }
