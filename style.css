@@ -404,7 +404,15 @@ textarea {
   color: #172b4d;
 }
 
-.menuMobile {
+.hidden {
+  opacity: 0;
+}
+
+.no-display {
+  display: none;
+}
+
+.menu-mobile {
   position: fixed;
   top: 0;
   width: 100%;
@@ -413,13 +421,13 @@ textarea {
   padding: 108px 0 0 28px;
 }
 
-.menuMobile button {
+.menu-mobile button {
   position: absolute;
   top: 62px;
   right: 38px;
 }
 
-.menuMobile ul li a {
+.menu-mobile ul li a {
   font-family: 'Inter', sans-serif;
   font-size: 32px;
   font-weight: 600;
@@ -429,7 +437,7 @@ textarea {
   padding: 10px 10px;
 }
 
-.menuMobile ul li {
+.menu-mobile ul li {
   margin: 20px 0;
 }
 
@@ -445,6 +453,9 @@ textarea {
     background-image: url(./assets/png/Header-llustration-desktop.png);
     background-position: center top -50px;
     z-index: 0;
+  }
+  .menu-mobile {
+    display: none;
   }
 
   #header {
