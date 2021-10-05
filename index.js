@@ -1,16 +1,15 @@
+const mobileMenu = document.querySelector('.menu-mobile');
+const menuToggler = document.querySelectorAll('.menu-toggle');
+const mobileAnchor = document.querySelectorAll('.mobile-anchor');
 
-let menuToggler = document.querySelectorAll('.menu-toggle').forEach(
-  el =>{
-    el.addEventListener('click', itWorks)
-  }
-)
-let mobileAnchor = document.querySelectorAll('.mobile-anchor').forEach(
-  el =>{
-    el.addEventListener('click', itWorks)
-  }
-)
-let mobileMenu = document.querySelector('.menu-mobile');
-
-function itWorks() {
-  mobileMenu.classList.toggle('no-display')
+function toggleMenu() {
+  mobileMenu.classList.toggle('no-display');
 }
+
+menuToggler.forEach(
+  (el) => el.addEventListener('click', toggleMenu),
+);
+
+mobileAnchor.forEach(
+  (el) => el.addEventListener('click', toggleMenu),
+);
