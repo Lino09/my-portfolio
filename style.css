@@ -63,6 +63,16 @@ ul {
   transition: all 300ms ease-out 0s;
 }
 
+.menu-mobile ul li a {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  text-decoration: none;
+  color: #3a4a42;
+  padding: 10px 10px;
+}
+
 .card a:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   background-color: white;
@@ -404,6 +414,33 @@ textarea {
   color: #172b4d;
 }
 
+.hidden {
+  opacity: 0;
+}
+
+.no-display {
+  display: none;
+}
+
+.menu-mobile {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  padding: 108px 0 0 28px;
+}
+
+.menu-mobile button {
+  position: absolute;
+  top: 62px;
+  right: 38px;
+}
+
+.menu-mobile ul li {
+  margin: 20px 0;
+}
+
 /* RESPONSIVE */
 
 .only-desktop {
@@ -416,6 +453,10 @@ textarea {
     background-image: url(./assets/png/Header-llustration-desktop.png);
     background-position: center top -50px;
     z-index: 0;
+  }
+
+  .menu-mobile {
+    display: none;
   }
 
   #header {

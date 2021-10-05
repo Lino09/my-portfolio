@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MC0G7V8RGW"></script>
 <script>
@@ -11,7 +12,6 @@
 
   gtag('config', 'G-MC0G7V8RGW');
 </script>
-    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -27,58 +27,59 @@
                 <li><a href="#about-me">About</a></li>
                 <li><a href="#form-start">Contact</a></li>
             </ul>
-            <button class="only-mobile">
+            <button class="only-mobile menu-toggle" type="button"> 
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon-md" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-        </nav>
-    </header>
-    <main >
-        <section id="landing">
-
-            <div class="landiv">
-                <h1>Hey there. I'm Abel<br><span class="greeny">I'm a software developer</span></h1>
-                <p id="main-support-text"> I can help you build a product , feature or website Look through some of my work
-                    and experience! If you like what you see and have a project you need coded,
-                    don’t hestiate to contact me.</p>
-                </div>
-                <div class="logo-cloud">
-                    <ul>
-                        <li>
-                            <a href="#"><img src="./assets/svg/twitter.svg" alt="link to abel's Twitter profile"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./assets/svg/Linkedin-icon.svg" alt="link to abel's LinkedIn"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./assets/svg/medium.svg" alt="link to abel's Medium"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./assets/svg/github.svg" alt="link to abel's Github"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./assets/svg/angellist.svg" alt="link to abel's Angellist"></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="scroll-down">
-                    <a href="#my-work">
-                        <img src="./assets/png/arrowtip.png" alt="button to works section"> 
-                    </a>
-                </div>
-            </section>
-                
-                <section id="my-work">
-                    <div class="first section">
-                <h2>My Recent Works</h2>
-                <img src="./assets/png/separator.png" alt="separator image">
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </nav>
+</header>
+<main >
+    <section id="landing">
+        
+        <div class="landiv">
+            <h1>Hey there. I'm Abel<br><span class="greeny">I'm a software developer</span></h1>
+            <p id="main-support-text"> I can help you build a product , feature or website Look through some of my work
+                and experience! If you like what you see and have a project you need coded,
+                don’t hestiate to contact me.</p>
             </div>
-
-            <div class="second section">
-
-                <div class="card">
+            <div class="logo-cloud">
+                <ul>
+                    <li>
+                        <a href="#"><img src="./assets/svg/twitter.svg" alt="link to abel's Twitter profile"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./assets/svg/Linkedin-icon.svg" alt="link to abel's LinkedIn"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./assets/svg/medium.svg" alt="link to abel's Medium"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./assets/svg/github.svg" alt="link to abel's Github"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./assets/svg/angellist.svg" alt="link to abel's Angellist"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="scroll-down">
+                <a href="#my-work">
+                    <img src="./assets/png/arrowtip.png" alt="button to works section"> 
+                </a>
+            </div>
+        </section>
+        
+        <section id="my-work">
+                    <div class="first section">
+                        <h2>My Recent Works</h2>
+                        <img src="./assets/png/separator.png" alt="separator image">
+                    </div>
+                    
+                    
+                    <div class="second section">
+                        
+                        <div class="card">
                     <img src="./assets/screenshots/placesplit.png" alt="thumbnail of test.placesplit.com">
                     <h3>Placesplit Real Estate Agency</h3>
                     <ul>
@@ -238,9 +239,30 @@
             </div>
             <a href="mailto:aherrera@wootbit.io" id="email-id">aherrera@wootbit.io</a>
         </section>
-        
+        <div class="menu-mobile no-display">
+            <button class="menu-toggle" type="button">
+                <img src="assets/png/IconCancel.png" alt="Close menu">
+            </button> 
+            <ul>
+                <li>
+                    <a class="mobile-anchor" href="#my-work">
+                        Portfolio
+                    </a>
+                </li>
+                <li>
+                    <a class="mobile-anchor" href="#about-me">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a class="mobile-anchor" href="#form-and-title">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
         
     </main>
+    <script src="./index.js"></script>
 </body>
-
 </html>
