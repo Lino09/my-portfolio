@@ -2,6 +2,9 @@ const mobileMenu = document.querySelector('.menu-mobile');
 const menuToggler = document.querySelectorAll('.menu-toggle');
 const mobileAnchor = document.querySelectorAll('.mobile-anchor');
 
+
+//Mobilr menu logic
+
 function toggleMenu() {
   mobileMenu.classList.toggle('no-display');
 }
