@@ -79,3 +79,20 @@ function togglePopUp(evt) {
 
 popUpToggle.forEach((el) => el.addEventListener('click', togglePopUp));
 
+// Email validation
+
+const form = document.querySelector('#contact-form');
+const email = document.querySelector('#email');
+const error = document.querySelector('.errors');
+
+form.addEventListener('submit',(event) => {
+  event.preventDefault();
+  error.innerHTML = '';
+  error.classList.add('no-display');
+  if (email.value===email.value.toLowerCase()) {
+    form.submit();
+  } else {
+    error.innerHTML += `<li>The ${email.name} should be in lower case.</li>`;
+    error.classList.remove('no-display');
+  }
+});
