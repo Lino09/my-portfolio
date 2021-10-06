@@ -78,3 +78,4 @@ function togglePopUp(evt) {
 }
 
 popUpToggle.forEach((el) => el.addEventListener('click', togglePopUp));
+
