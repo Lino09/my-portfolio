@@ -259,6 +259,14 @@ h2 {
   text-align: center;
 }
 
+.popup-list li {
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: #ebf0ee;
+  margin: 16px 4px;
+  font-size: 12px;
+}
+
 .card ul li {
   padding: 8px 12px;
   background-color: #ebf0ee;
@@ -460,7 +468,7 @@ textarea {
 }
 
 .popup-project-content {
-  position:relative;
+  position: relative;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -481,14 +489,6 @@ textarea {
 
 .popup-list {
   display: flex;
-}
-
-.popup-list li {
-  padding: 8px 16px;
-  border-radius: 4px;
-  background-color: #ebf0ee;
-  margin: 16px 4px;
-  font-size: 12px;
 }
 
 .popup-title {
@@ -513,13 +513,9 @@ textarea {
   font-size: 20px;
   border-radius: 4px;
   text-decoration: none;
-  margin: 12px 0px;
+  margin: 12px 0;
   width: 45%;
   margin-right: 5%;
-}
-
-.popup-toggle {
-  
 }
 
 .floater {
@@ -657,7 +653,7 @@ textarea {
     height: 300px;
   }
 
-  .popup-project-content{
+  .popup-project-content {
     width: 60%;
     display: flex;
     flex-direction: row;
@@ -672,18 +668,15 @@ textarea {
     order: -1;
     margin-bottom: 32px;
   }
-  
+
   .popup-title {
     order: 0;
     width: 50%;
   }
-  
+
   .popup-button-container {
     order: 1;
     width: 50%;
-  }
-  .popup-button-container a{
-    
   }
 
   .popup-list {
@@ -694,7 +687,6 @@ textarea {
     order: 3;
     margin-bottom: 32px;
   }
-
 }
 
 @media only screen and (min-device-width: 1024px) {
