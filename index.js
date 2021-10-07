@@ -1,20 +1,19 @@
-const projects = [
-  {
-    title: 'Placesplit Real Estate Agency',
-    img: './assets/screenshots/placesplit.png',
-    description: 'Placesplit description Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description',
-    listOfTechnologies: ['Nuxt', 'Mailisearch', 'Laravel', 'Docker'],
-    liveUrl: 'https://test.placesplit.com',
-    githubUrl: 'https://www.github.com/Lino09',
-  },
-  {
-    title: 'Wootbit Software Developer Agency',
-    img: './assets/screenshots/wootbit-io.png',
-    description: 'Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description ',
-    listOfTechnologies: ['Vue', 'ElasticSearch', 'Laravel', 'pm2'],
-    liveUrl: 'https://www.wootbit.io',
-    githubUrl: 'https://www.github.com/Lino09',
-  },
+const projects = [{
+  title: 'Placesplit Real Estate Agency',
+  img: './assets/screenshots/placesplit.png',
+  description: 'Placesplit description Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description',
+  listOfTechnologies: ['Nuxt', 'Mailisearch', 'Laravel', 'Docker'],
+  liveUrl: 'https://test.placesplit.com',
+  githubUrl: 'https://www.github.com/Lino09',
+},
+{
+  title: 'Wootbit Software Developer Agency',
+  img: './assets/screenshots/wootbit-io.png',
+  description: 'Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description ',
+  listOfTechnologies: ['Vue', 'ElasticSearch', 'Laravel', 'pm2'],
+  liveUrl: 'https://www.wootbit.io',
+  githubUrl: 'https://www.github.com/Lino09',
+},
 ];
 
 const cardSection = document.querySelector('.second');
@@ -86,6 +85,7 @@ const formEmail = document.querySelector('#email');
 const formMessage = document.querySelector('#message');
 const formName = document.querySelector('#name');
 const errors = document.querySelector('.errors');
+
 function thereAreErrors() {
   errors.classList.remove('no-display');
 }
@@ -101,24 +101,24 @@ form.addEventListener('submit', (event) => {
   thereAreErrors();
 });
 
+let contactForm = {};
 
-
-if(window.localStorage.getItem('usersForm')) {
+if (window.localStorage.getItem('usersForm')) {
   contactForm = JSON.parse(window.localStorage.getItem('usersForm'));
   formName.value = contactForm.name;
   formEmail.value = contactForm.email;
   formMessage.value = contactForm.message;
-}else {
-  var contactForm = {
+} else {
+  contactForm = {
     name: formName.value,
     email: formEmail.value,
     message: formMessage.value,
-  }
+  };
 }
 
 window.addEventListener('keyup', () => {
- contactForm.name = formName.value;
- contactForm.email = formEmail.value;
- contactForm.message = formMessage.value;
- window.localStorage.setItem('usersForm', JSON.stringify(contactForm));
-})
+  contactForm.name = formName.value;
+  contactForm.email = formEmail.value;
+  contactForm.message = formMessage.value;
+  window.localStorage.setItem('usersForm', JSON.stringify(contactForm));
+});
