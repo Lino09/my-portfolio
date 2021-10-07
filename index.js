@@ -1,20 +1,19 @@
-const projects = [
-  {
-    title: 'Placesplit Real Estate Agency',
-    img: './assets/screenshots/placesplit.png',
-    description: 'Placesplit description Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description',
-    listOfTechnologies: ['Nuxt', 'Mailisearch', 'Laravel', 'Docker'],
-    liveUrl: 'https://test.placesplit.com',
-    githubUrl: 'https://www.github.com/Lino09',
-  },
-  {
-    title: 'Wootbit Software Developer Agency',
-    img: './assets/screenshots/wootbit-io.png',
-    description: 'Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description ',
-    listOfTechnologies: ['Vue', 'ElasticSearch', 'Laravel', 'pm2'],
-    liveUrl: 'https://www.wootbit.io',
-    githubUrl: 'https://www.github.com/Lino09',
-  },
+const projects = [{
+  title: 'Placesplit Real Estate Agency',
+  img: './assets/screenshots/placesplit.png',
+  description: 'Placesplit description Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description  Placesplit description',
+  listOfTechnologies: ['Nuxt', 'Mailisearch', 'Laravel', 'Docker'],
+  liveUrl: 'https://test.placesplit.com',
+  githubUrl: 'https://www.github.com/Lino09',
+},
+{
+  title: 'Wootbit Software Developer Agency',
+  img: './assets/screenshots/wootbit-io.png',
+  description: 'Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description Wootbit description ',
+  listOfTechnologies: ['Vue', 'ElasticSearch', 'Laravel', 'pm2'],
+  liveUrl: 'https://www.wootbit.io',
+  githubUrl: 'https://www.github.com/Lino09',
+},
 ];
 
 const cardSection = document.querySelector('.second');
@@ -82,8 +81,11 @@ popUpToggle.forEach((el) => el.addEventListener('click', togglePopUp));
 // Form validations
 
 const form = document.querySelector('#contact-form');
-const email = document.querySelector('#email');
+const formEmail = document.querySelector('#email');
+const formMessage = document.querySelector('#message');
+const formName = document.querySelector('#name');
 const errors = document.querySelector('.errors');
+
 function thereAreErrors() {
   errors.classList.remove('no-display');
 }
@@ -91,10 +93,32 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
   errors.innerHTML = '';
   errors.classList.add('no-display');
-  if (email.value === email.value.toLowerCase()) {
+  if (formEmail.value === formEmail.value.toLowerCase()) {
     form.submit();
   } else {
-    errors.innerHTML += `<li>The ${email.name} field must be lowercase</li>`;
+    errors.innerHTML += `<li>The ${formEmail.name} field must be lowercase</li>`;
   }
   thereAreErrors();
+});
+
+let contactForm = {};
+
+if (window.localStorage.getItem('usersForm')) {
+  contactForm = JSON.parse(window.localStorage.getItem('usersForm'));
+  formName.value = contactForm.name;
+  formEmail.value = contactForm.email;
+  formMessage.value = contactForm.message;
+} else {
+  contactForm = {
+    name: formName.value,
+    email: formEmail.value,
+    message: formMessage.value,
+  };
+}
+
+window.addEventListener('keyup', () => {
+  contactForm.name = formName.value;
+  contactForm.email = formEmail.value;
+  contactForm.message = formMessage.value;
+  window.localStorage.setItem('usersForm', JSON.stringify(contactForm));
 });
