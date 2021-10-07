@@ -78,3 +78,23 @@ function togglePopUp(evt) {
 }
 
 popUpToggle.forEach((el) => el.addEventListener('click', togglePopUp));
+
+// Form validations
+
+const form = document.querySelector('#contact-form');
+const email = document.querySelector('#email');
+const errors = document.querySelector('.errors');
+function thereAreErrors() {
+  errors.classList.remove('no-display');
+}
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  errors.innerHTML = '';
+  errors.classList.add('no-display');
+  if (email.value === email.value.toLowerCase()) {
+    form.submit();
+  } else {
+    errors.innerHTML += `<li>The ${email.name} field must be lowercase</li>`;
+  }
+  thereAreErrors();
+});
