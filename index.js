@@ -18,11 +18,11 @@ const projects = [{
 
 const cardSection = document.querySelector('.second');
 
-for (let i = 0; i <= 2; i += 1) {
+for (let i = 0; i < 2; i += 1) {
   let cards = '';
   let index = 1;
   Object.keys(projects).forEach((project) => {
-    cards += `<div class="card"><img src="./assets/screenshots/placesplit.png" alt="test.placesplit.com"><h3>${projects[project].title}</h3><ul><li>Vue</li><li>Nuxt</li><li>Laravel</li><li>MailiSearch</li></ul><button  class="popup-toggle project-${index}" type="button">See Project</button></div>`;
+    cards = `<div class="card"><img src="./assets/screenshots/placesplit.png" alt="test.placesplit.com"><h3>${projects[project].title}</h3><ul><li>Vue</li><li>Nuxt</li><li>Laravel</li><li>MailiSearch</li></ul><button  class="popup-toggle project-${index}" type="button">See Project</button></div>`;
     index += 1;
   });
   cardSection.innerHTML += cards;
@@ -61,7 +61,7 @@ function hydrate(project) {
   let list = '';
   projects[project].listOfTechnologies.forEach(
     (listItem) => {
-      list += `<li>${listItem}</li>`;
+      list = `<li>${listItem}</li>`;
     },
   );
   document.querySelector('.popup-list').innerHTML = list;
@@ -116,7 +116,7 @@ if (window.localStorage.getItem('usersForm')) {
   };
 }
 
-window.addEventListener('keyup', () => {
+window.addEventListener('keydown', () => {
   contactForm.name = formName.value;
   contactForm.email = formEmail.value;
   contactForm.message = formMessage.value;
