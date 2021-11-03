@@ -14,11 +14,19 @@ const projects = [{
   liveUrl: 'https://www.wootbit.io',
   githubUrl: 'https://www.github.com/Lino09',
 },
+{
+  title: 'Simple Todo-List',
+  img: './assets/screenshots/wootbit-io.png',
+  description: 'Simple todo list which allows users to create, edit, delete, and mark each item as completed, change order of the items and clear all the completed ones. Everything is saved in local storage.',
+  listOfTechnologies: ['HTML', 'CSS', 'Javascript', 'Luxon'],
+  liveUrl: 'https://lino09.github.io/todo-list/',
+  githubUrl: 'https://github.com/Lino09/todo-list',
+}
 ];
 
 const cardSection = document.querySelector('.second');
 
-for (let i = 0; i <= 2; i += 1) {
+for (let i = 0; i < 2; i += 1) {
   let cards = '';
   let index = 1;
   Object.keys(projects).forEach((project) => {
